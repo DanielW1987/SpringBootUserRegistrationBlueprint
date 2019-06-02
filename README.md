@@ -1,5 +1,20 @@
 # Spring Boot User Registration Blueprint
-## Setup
+## Table of contents
+[1. Project Setup](https://github.com/Waginator/SpringBootUserRegistrationBlueprint#project-setup)
+
+[2. Features](https://github.com/Waginator/SpringBootUserRegistrationBlueprint#features)
+
+[2.1 Login](https://github.com/Waginator/SpringBootUserRegistrationBlueprint#login)
+
+[2.2 Registration](https://github.com/Waginator/SpringBootUserRegistrationBlueprint#registration)
+
+[2.3 Reset password](https://github.com/Waginator/SpringBootUserRegistrationBlueprint#reset-password)
+
+[2.4 Backend](https://github.com/Waginator/SpringBootUserRegistrationBlueprint#backend)
+
+[3. Next features](https://github.com/Waginator/SpringBootUserRegistrationBlueprint#next-features)
+
+## Project Setup
 ...
 
 ## Features
