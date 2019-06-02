@@ -1,16 +1,35 @@
 # Spring Boot User Registration Blueprint
-## Setup
+## Table of contents
+1. [ Project Setup ](#project-setup)
+
+2. [ Features ](#features)
+
+2.1 [ Login ](#login)
+
+2.2 [ Registration ](#registration)
+
+2.3 [ Reset password ](#reset-password)
+
+2.4 [ Backend ](#backend)
+
+3. [ Next features ](#next-features)
+
+<a name="project-setup"></a>
+## 1 Project Setup
 ...
 
-## Features
+<a name="features"></a>
+## 2 Features
 ...
 
-### Login
+<a name="login"></a>
+### 2.1 Login
 ...
 
 ![Login](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/login.png)
 
-### Registration
+<a name="registration"></a>
+### 2.3 Registration
 ...
 
 ![Register 1](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/register.png)
@@ -27,7 +46,8 @@
 
 ![Register 4](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/register-4.png)
 
-### Reset password
+<a name="reset-password"></a>
+### 2.4 Reset password
 ...
 
 ![Forgot password 1](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/forgot-password.png)
@@ -40,10 +60,11 @@
 
 ![Forgot password 3](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/forgot-password-3.png "Backend")
 
-### Remember me
-Coming soon...
-
-### Backend
+<a name="backend"></a>
+### 2.5 Backend
 ...
 
 ![Backend](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/backend.png "Backend")
+
+<a name="next-features"></a>
+## 3 Next Features
