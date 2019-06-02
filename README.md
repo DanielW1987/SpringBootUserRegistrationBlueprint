@@ -69,25 +69,29 @@ The validation messages are displayed as follows:
 
 After submitting the registration form you will receive an email asking you to confirm your registration:
 
-![Register 4](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/register-4.png)
+<kbd><img src="https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/register-4.png" /></kbd>
 
-The confirmation workflows handle the following possible issues:
+The confirmation workflow handle the following possible issues:
 - token is expired 
 - token was not found (already confirmed or invalid token)
 
 <a name="reset-password"></a>
 ### 2.3 Reset password
-...
+You can reset your password via the URL `http://localhost:8080/reset-password`. The reset password form looks like this:
 
 ![Forgot password 1](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/forgot-password.png)
 
-...
+After entering a valid and registered email address you will receive an email with a link to re-enter your password:
 
-![Forgot password 2](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/forgot-password-2.png "Backend")
+<kbd><img src="https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/forgot-password-2.png" /></kbd>
 
-...
+The reset password workflow handle the following possible issues:
+- token is expired 
+- token was not found (already used or invalid token)
 
-![Forgot password 3](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/forgot-password-3.png "Backend")
+If you click on the link in your email you get the possibility to assign a new password:
+
+![Forgot password 3](https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/forgot-password-3.png)
 
 <a name="backend"></a>
 ### 2.4 Backend
