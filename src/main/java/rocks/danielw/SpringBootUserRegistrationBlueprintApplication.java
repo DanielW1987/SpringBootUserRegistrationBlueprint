@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootAuthenticationBlueprintApplication {
+public class SpringBootUserRegistrationBlueprintApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(SpringBootAuthenticationBlueprintApplication.class, args);
+    SpringApplication.run(SpringBootUserRegistrationBlueprintApplication.class, args);
   }
 	
 }
