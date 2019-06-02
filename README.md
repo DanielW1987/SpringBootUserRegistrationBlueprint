@@ -71,7 +71,7 @@ After submitting the registration form you will receive an email asking you to c
 
 <kbd><img src="https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/register-4.png" /></kbd>
 
-The confirmation workflow handle the following possible issues:
+The confirmation workflow handles the following possible issues:
 - token is expired 
 - token was not found (already confirmed or invalid token)
 
@@ -85,7 +85,7 @@ After entering a valid and registered email address you will receive an email wi
 
 <kbd><img src="https://github.com/Waginator/SpringBootUserRegistrationBlueprint/blob/master/readme-data/forgot-password-2.png" /></kbd>
 
-The reset password workflow handle the following possible issues:
+The reset password workflow handles the following possible issues:
 - token is expired 
 - token was not found (already used or invalid token)
 
