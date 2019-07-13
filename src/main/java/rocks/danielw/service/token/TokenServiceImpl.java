@@ -76,7 +76,7 @@ public class TokenServiceImpl implements TokenService {
 
     tokenRepository.delete(tokenEntity);
     String newTokenString = createEmailVerificationToken(userEntity.getUserId());
-    emailService.sendEmail(new RegistrationVerificationEmail(userEntity.getEmail(), tokenString));
+    emailService.sendEmail(new RegistrationVerificationEmail(userEntity.getEmail(), newTokenString));
   }
 
   @Override

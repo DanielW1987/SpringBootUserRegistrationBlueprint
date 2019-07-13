@@ -1,15 +1,15 @@
 package rocks.danielw.web.controller.web.authentication;
 
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.context.annotation.Import;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import rocks.danielw.security.WebSecurity;
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 @WebMvcTest(ResetPasswordController.class)
 @Import(WebSecurity.class)
-public class ResetPasswordControllerTest {
+class ResetPasswordControllerTest {
 
   // ToDo DanielW: Implement this
 

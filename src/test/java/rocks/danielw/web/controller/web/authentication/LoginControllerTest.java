@@ -1,49 +1,54 @@
 package rocks.danielw.web.controller.web.authentication;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import rocks.danielw.config.constants.Endpoints;
 import rocks.danielw.config.constants.ViewNames;
-import rocks.danielw.security.WebSecurity;
 import rocks.danielw.service.user.UserService;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 @WebMvcTest(LoginController.class)
 @Import(WebSecurity.class)
-public class LoginControllerTest {
+class LoginControllerTest {
 
-    @Autowired private MockMvc               mockMvc;
-    @MockBean  private UserService           userService;
-    @MockBean  private BCryptPasswordEncoder passwordEncoder;
+  @Autowired
+  private MockMvc mockMvc;
 
-    @Before
-    public void setUp() {
-        // do nothing
-    }
+  @MockBean
+  private UserService userService;
 
-    @After
-    public void tearDown() {
-        // do nothing
-    }
+  @MockBean
+  private BCryptPasswordEncoder passwordEncoder;
 
-    @Test
-    public void given_login_uri_should_return_login_view() throws Exception {
-        mockMvc.perform(get(Endpoints.LOGIN))
-                .andExpect(status().isOk())
-                .andExpect(view().name(ViewNames.LOGIN))
-                .andExpect(content().string(containsString("Login")));
-    }
+  @BeforeEach
+  void setUp() {
+    // do nothing
+  }
+
+  @AfterEach
+  void tearDown() {
+    // do nothing
+  }
+
+  @Test
+  void given_login_uri_should_return_login_view() throws Exception {
+    mockMvc.perform(get(Endpoints.LOGIN))
+            .andExpect(status().isOk())
+            .andExpect(view().name(ViewNames.LOGIN))
+            .andExpect(content().string(containsString("Login")));
+  }
 }
